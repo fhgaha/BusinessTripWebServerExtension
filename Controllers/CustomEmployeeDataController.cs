@@ -14,8 +14,8 @@ namespace WebServerExtension.Controllers
         readonly ICurrentObjectContextProvider currentObjectContextProvider;
         readonly ICustomEmployeeService customEmplService;
 
-        public CustomEmployeeDataController(
-            ICurrentObjectContextProvider currentObjectContextProvider, ICustomEmployeeService customEmplService)
+        public CustomEmployeeDataController(ICurrentObjectContextProvider currentObjectContextProvider,
+                                            ICustomEmployeeService customEmplService)
         {
             this.currentObjectContextProvider = currentObjectContextProvider;
             this.customEmplService = customEmplService;

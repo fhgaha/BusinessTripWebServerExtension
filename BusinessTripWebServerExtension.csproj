@@ -106,10 +106,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CustomCityDataController.cs" />
     <Compile Include="Controllers\CustomEmployeeDataController.cs" />
+    <Compile Include="Models\CustomCityData.cs" />
     <Compile Include="Models\CustomEmployeeData.cs" />
     <Compile Include="Models\CustomEmployeeModelsData.cs" />
+    <Compile Include="Services\CustomCityService\CustomCityService.cs" />
     <Compile Include="Services\CustomEmployeeService\CustomEmployeeService.cs" />
+    <Compile Include="Services\CustomCityService\ICustomCityService.cs" />
     <Compile Include="Services\CustomEmployeeService\ICustomEmployeeService.cs" />
     <Compile Include="BusinessTripWebServerExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

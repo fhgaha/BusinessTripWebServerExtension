@@ -59,6 +59,7 @@ namespace BusinessTripWebServerExtension
             // containerBuilder.RegisterType<YourRowLifeCycle>().Keyed<IRowLifeCycle>(SectionID).SingleInstance(); 
 
             containerBuilder.RegisterType<CustomEmployeeService>().As<ICustomEmployeeService>().SingleInstance();
+            containerBuilder.RegisterType<CustomCityService>().As<ICustomCityService>().SingleInstance();
         }
 
         /// <summary>
