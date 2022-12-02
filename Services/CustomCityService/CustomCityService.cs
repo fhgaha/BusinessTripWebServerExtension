@@ -19,16 +19,5 @@ namespace BusinessTripWebServerExtension.Services
             };
             return model;
         }
-
-        // ILayoutPropertyItem cityControl = CustomizableControl.FindPropertyItem<ILayoutPropertyItem>("City");
-        // if (cityControl == null) return;
-        // SpinEdit daysControl = CustomizableControl.FindPropertyItem<SpinEdit>("TripDays");
-        // if (daysControl == null) return;
-        // ILayoutPropertyItem expensesControl = CustomizableControl.FindPropertyItem<ILayoutPropertyItem>("Expenses");
-        // if (expensesControl == null) return;
-        // BaseUniversalItem citiesRow = ObjContext.GetObject<BaseUniversalItem>((Guid)cityControl.ControlValue);
-        // if (citiesRow == null) return;
-        // string allowance = citiesRow.ItemCard.MainInfo["DailyAllowance"].ToString();
-        // expensesControl.ControlValue = decimal.Parse(allowance) * daysControl.Value;
     }
 }
