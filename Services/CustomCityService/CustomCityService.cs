@@ -11,13 +11,11 @@ namespace BusinessTripWebServerExtension.Services
         {
             BaseUniversalItem city = context.ObjectContext.GetObject<BaseUniversalItem>(cityId);
             if (city == null) return null;
-            string allowance = city.ItemCard.MainInfo["DailyAllowance"].ToString();
 
-            CustomCityData model = new CustomCityData
+            return new CustomCityData
             {
-                DailyAllowance = allowance,
+                DailyAllowance = city.ItemCard.MainInfo["DailyAllowance"].ToString(),
             };
-            return model;
         }
     }
 }

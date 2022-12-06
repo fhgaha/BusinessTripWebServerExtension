@@ -61,6 +61,7 @@ namespace BusinessTripWebServerExtension
             containerBuilder.RegisterType<CustomEmployeeService>().As<ICustomEmployeeService>().SingleInstance();
             containerBuilder.RegisterType<CustomCityService>().As<ICustomCityService>().SingleInstance();
             containerBuilder.RegisterType<CustomApprovingStageOperationService>().As<ICustomApprovingStageOperationService>().SingleInstance();
+            containerBuilder.RegisterType<CustomTicketsCostService>().As<ICustomTicketsCostService>().SingleInstance();
         }
 
         /// <summary>
